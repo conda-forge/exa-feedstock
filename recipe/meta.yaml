@@ -10,7 +10,7 @@ source:
   sha256: 96e743ffac0512a278de9ca3277183536ee8b691a46ff200ec27e28108fef783
 
 build:
-  number: 0
+  number: 1
   # not supported by upstream yet
   skip: true  # [win]
 
@@ -18,7 +18,7 @@ requirements:
   build:
     - rust
     - {{ compiler('c') }}
-    - {{native}}binutils
+    - {{ native }}binutils      # [win]
 
 test:
   commands:
