@@ -10,13 +10,13 @@ source:
   sha256: 96e743ffac0512a278de9ca3277183536ee8b691a46ff200ec27e28108fef783
 
 build:
-  number: 1
+  number: 2
   # not supported by upstream yet
   skip: true  # [win]
 
 requirements:
   build:
-    - rust
+    - {{ compiler('rust') }}
     - {{ compiler('c') }}
     - {{ native }}binutils      # [win]
 
