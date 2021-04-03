@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 {% set native = 'm2w64-' if win else '' %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/ogham/exa/archive/v{{ version }}.tar.gz
-  sha256: 96e743ffac0512a278de9ca3277183536ee8b691a46ff200ec27e28108fef783
+  sha256: 27420f7b805941988399d63f388be4f6077eee94a505bf01c2fb0e7d15cbf78d
 
 build:
-  number: 2
+  number: 0
   # not supported by upstream yet
   skip: true  # [win]
 
